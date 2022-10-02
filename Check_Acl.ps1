@@ -1,4 +1,5 @@
-﻿$volPath = "\\192.168.0.130\volmulti"
+#
+$volPath = "\\192.168.0.130\volmulti"
 $folders = Get-ChildItem $volPath
 $AccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule("DEMO\Domain Admins","FullControl","Allow")
 $arrayFullPath = @()
